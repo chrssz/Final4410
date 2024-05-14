@@ -29,7 +29,7 @@ public class AutoGun : MonoBehaviour
     private float nextTimeToFire = 0f;
 
     public Animator animator;
-
+   
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -110,4 +110,5 @@ public class AutoGun : MonoBehaviour
         Destroy(impactGO, 1f);
     }
 
+   
 }

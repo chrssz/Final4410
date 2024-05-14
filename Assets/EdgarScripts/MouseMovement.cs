@@ -20,6 +20,7 @@ public class MouseLook : MonoBehaviour
 
     private float verticalRot = 0;
 
+    
     // Start is called before the first frame update
     void Start()
     {

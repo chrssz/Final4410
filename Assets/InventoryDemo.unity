@@ -5348,6 +5348,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f2fd29f58b9734683512546acec310, type: 3}
+--- !u!1 &1990294414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990294416}
+  m_Layer: 0
+  m_Name: Assign_Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1990294416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990294414}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8076668, y: 0.8255196, z: -3.7811575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1994808558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5941,7 +5972,9 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6474098880338602133, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
+    - {fileID: 2952243821164794913, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
@@ -5961,6 +5994,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 336797642}
+    - target: {fileID: 405546643271620695, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2378966939133783970, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.967
@@ -6006,6 +6043,10 @@ PrefabInstance:
       value: Glock
       objectReference: {fileID: 0}
     - target: {fileID: 8461885515226575680, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 571194469}
+    - target: {fileID: 8461885515226575680, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
       propertyPath: gunData
       value: 
       objectReference: {fileID: 11400000, guid: 7ecbc1c5b65484a4696318678e8f0eff, type: 2}
@@ -6030,6 +6071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ak47
       objectReference: {fileID: 0}
+    - target: {fileID: 5037838239495905687, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 571194469}
     - target: {fileID: 5459276991419551603, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.991
@@ -6082,6 +6127,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 336797642}
+    - target: {fileID: 8156632081188885797, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6166,3 +6215,4 @@ SceneRoots:
   - {fileID: 1823966006}
   - {fileID: 5253455052388040297}
   - {fileID: 1703718748235809716}
+  - {fileID: 1990294416}

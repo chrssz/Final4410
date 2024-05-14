@@ -501,8 +501,9 @@ MonoBehaviour:
   groundDistance: 0.2
   groundMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   jumping: {fileID: 8300000, guid: 50fd5c0b13f0a214880350516b3d28b3, type: 3}
+  inventory: {fileID: 0}
 --- !u!114 &5371049181123499930
 MonoBehaviour:
   m_ObjectHideFlags: 0
