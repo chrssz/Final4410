@@ -10,31 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.967
+      value: -1.0324922
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.269
+      value: 0.59960175
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.238
+      value: -1.2661958
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.67695135
+      value: 0.30192095
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.045160517
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.9417855
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7360279
+      value: 0.14086972
       objectReference: {fileID: 0}
     - target: {fileID: 1595259149688851370, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2119136116645105936, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3639045838188870751, guid: ac9d4224e1b428143bab151b220ebd3e, type: 3}
       propertyPath: impactEffect
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9d4f325fba5015f429993de3eb252472, type: 3}
+  gunData: {fileID: 0}
 --- !u!65 &8979198775420588642
 BoxCollider:
   m_ObjectHideFlags: 0

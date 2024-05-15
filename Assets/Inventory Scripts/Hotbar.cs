@@ -11,27 +11,40 @@ public class Hotbar : MonoBehaviour
     void Start()
     {
         Inventory.ItemAdded += InventoryScript_ItemAdded;
+        InitializeHotbarSlots();
     }
-
+    void InitializeHotbarSlots()
+    {
+        for (int i = 0; i < transform.GetChild(0).GetChild(0).childCount; i++)
+        {
+            Transform slot = transform.GetChild(0).GetChild(0).GetChild(i);
+            UnityEngine.UI.Image image = slot.GetChild(0).GetComponent<UnityEngine.UI.Image>();
+            image.enabled = false; // Disable image initially
+        }
+    }
     private void InventoryScript_ItemAdded(object sender, InventorEventArgs e)
     {
-        //Transform hotbar = transform.Find("Hotbar");
-        foreach(Transform slot in transform.GetChild(0).GetChild(0).transform)
+        Debug.Log("Item Added Event Fired!");
+        
+        foreach(Transform slot in transform.GetChild(0).transform)
         {
             
             
-            UnityEngine.UI.Image image = slot.GetChild(0).GetComponent<UnityEngine.UI.Image>();
+            UnityEngine.UI.Image image = slot.GetChild(0).GetChild(0).GetComponent<UnityEngine.UI.Image>();
             
             if(!image.enabled)
             {
-                
+                Debug.Log("Found available slot: " + slot.GetSiblingIndex());
                 image.enabled = true;
                 image.sprite = e.Item.Image;
                 Debug.Log("Item Added in Hotbar!");
-               break;
+                return;
             }
-            
-            
+            else
+            {
+                Debug.Log("Occupied slot at " + slot.GetSiblingIndex() + " is occupied by" + image.sprite.name);
+                
+            }
         }
 
     }

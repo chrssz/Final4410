@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Reflection;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
@@ -34,10 +35,12 @@ public class Inventory : MonoBehaviour
                 if(gunData != null)
                 {
                     
-                    if (gunData.GunPrefab == selected_gun)
+                    if (slot == selected_slot)
                     {
-                        Debug.LogWarning(item.Name + " is already equipped");
-
+                        Destroy(selected_gun);
+                        disableEquipBorder(selected_slot);
+                        selected_slot = -1;
+                        selected_gun = null;
                     }
                     else
                     {
@@ -49,14 +52,13 @@ public class Inventory : MonoBehaviour
                             disableEquipBorder(selected_slot);
                         }
 
-                        float x = weaponHolder.transform.position.x;
-                        float y = weaponHolder.transform.position.y;
-                        float z = weaponHolder.transform.position.z;
-                        GameObject gunInstance = Instantiate(gunData.GunPrefab, new Vector3(x + 0.27f,y- 0.18f,z+0.30f) ,weaponHolder.transform.rotation);
+                        
+                        Vector3 offset = new Vector3(0.27f, 0.18f,0.30f);
+                        GameObject gunInstance = Instantiate(gunData.GunPrefab,weaponHolder.transform.position,weaponHolder.transform.rotation);
 
                         gunInstance.transform.parent = weaponHolder.transform;
                     
-        
+                        gunInstance.SetActive(true);
 
                         selected_slot = slot;
                         selected_gun = gunInstance;

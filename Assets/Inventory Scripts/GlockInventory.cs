@@ -22,7 +22,7 @@ public class GlockInventory : MonoBehaviour, IInventoryItem
     public Sprite image = null;
     public GunData gunData; // Public reference to GunData ScriptableObject
     
-  
+    
   
   public void OnPickup()
   {

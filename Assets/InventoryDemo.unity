@@ -5947,6 +5947,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5135148039406859883, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135148039406859883, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135148039406859883, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5371049181123499930, guid: dc20e585bc8cd7044afb9d076b193709, type: 3}
       propertyPath: healthBar
       value: 
@@ -6042,6 +6054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glock
       objectReference: {fileID: 0}
+    - target: {fileID: 3046713182002869528, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8461885515226575680, guid: 26597ee16210d5f4cbe5f57f38d37d19, type: 3}
       propertyPath: cam
       value: 
@@ -6070,6 +6086,10 @@ PrefabInstance:
     - target: {fileID: 4650230306231997897, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
       propertyPath: m_Name
       value: Ak47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650230306231997897, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5037838239495905687, guid: 4b379cb561c05fa468e281e04d72314a, type: 3}
       propertyPath: cam
